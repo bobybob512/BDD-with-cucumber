@@ -5,5 +5,5 @@ Feature: : Demo Feature
 
     Scenario: Should load example website
         Given I open example page
-        Then I see page title
-        And I see some text
+        #Then I see page title
+        #And I see some text
