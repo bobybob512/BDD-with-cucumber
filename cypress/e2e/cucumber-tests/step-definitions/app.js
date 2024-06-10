@@ -4,8 +4,9 @@ defineStep("I open example page", () => {
     cy.visit('https://www.example.com');
 });
 
-defineStep("I see page title", () => {
+defineStep("I see page title {string}", (name) => {
     cy.get("h1").should("be.visible");
+    cy.get("h1").should('contain', `${name}`)
 });
 
 defineStep("I see some text", () => {
