@@ -9,3 +9,15 @@ Feature: : Demo Feature
         And I see some text
         #this is also possible
         And I see some text 
+
+    Scenario Outline: Scenario Outline name: Should load example website
+        Given I open example page
+        Then I see page title "<title>"
+        And I see some text
+        #this is also possible
+        And I see some text 
+
+        Examples:
+            | title    |
+            | Example  |
+            | Domain     |
